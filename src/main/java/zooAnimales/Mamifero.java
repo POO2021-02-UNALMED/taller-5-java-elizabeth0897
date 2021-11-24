@@ -20,14 +20,14 @@ public class Mamifero extends Animal {
 		this.patas = patas;
 	}
 	
-	public static void crearCaballo(String nombre,int edad,String genero) {
-		new Mamifero(nombre,edad,"pradera",genero,true,4);
+	public static Mamifero crearCaballo(String nombre,int edad,String genero) {
 		caballos++;
+		return new Mamifero(nombre,edad,"pradera",genero,true,4);
 	}
 	
-	public static void crearLeon(String nombre, int edad, String genero) {
-		new Mamifero(nombre,edad,"selva",genero,true,4);
+	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		leones++;
+		return new Mamifero(nombre,edad,"selva",genero,true,4);		
 	}
 	
 	public boolean getPelaje() {
